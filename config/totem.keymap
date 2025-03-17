@@ -21,7 +21,7 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <(-1)>;
+    quick-tap-ms = <100>;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
@@ -96,6 +96,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <100>;
         };
 
         shortlt: shortlt {
@@ -105,6 +107,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
+            quick-tap-ms = <100>;
+            flavor = "tap-preferred";
         };
     };
 
