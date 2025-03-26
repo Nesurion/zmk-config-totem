@@ -59,6 +59,8 @@
         sticky_shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <13 16>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
     };
 
