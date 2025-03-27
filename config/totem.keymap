@@ -55,13 +55,6 @@
             bindings = <&kp DELETE>;
             key-positions = <35 36>;
         };
-
-        sticky_shift {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <35 36>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
     };
 
     macros {
