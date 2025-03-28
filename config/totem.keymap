@@ -60,22 +60,15 @@
             key-positions = <7 6>;
             timeout-ms = <50>;
         };
-    };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+        resetl {
+            bindings = <&sys_reset>;
+            key-positions = <20 32 33 34>;
+        };
+
+        resetr {
+            bindings = <&sys_reset>;
+            key-positions = <31 37 36 35>;
         };
     };
 
