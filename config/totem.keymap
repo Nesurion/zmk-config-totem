@@ -44,13 +44,6 @@
             bindings = <&kp ESC>;
         };
 
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <37 32>;
-            layers = <0>;
-            timeout-ms = <100>;
-        };
-
         delete {
             bindings = <&kp DELETE>;
             key-positions = <35 36>;
@@ -148,10 +141,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q              &kp W         &kp E            &kp R            &kp T          &kp Y             &kp U             &kp I            &kp O                &kp P
-       &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G          &kp H             &hmr RIGHT_GUI J  &hmr RALT K      &hmr LEFT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON
-&none  &kp Z              &kp X         &kp C            &kp V            &kp B          &kp N             &kp M             &kp COMMA        &kp DOT              &kp FSLH                    &none
-                                        &sk LEFT_SHIFT   &shortlt 1 TAB   &lt 3 SPACE    &shortlt 2 ENTER  &kp BACKSPACE     &sk RIGHT_SHIFT
+            &kp Q              &kp W         &kp E            &kp R            &kp T          &kp Y             &kp U             &kp I          &kp O                &kp P
+            &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G          &kp H             &hmr RIGHT_GUI J  &hmr RALT K    &hmr LEFT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON
+&caps_word  &kp Z              &kp X         &kp C            &kp V            &kp B          &kp N             &kp M             &kp COMMA      &kp DOT              &kp FSLH                    &none
+                                             &none            &shortlt 1 TAB   &lt 3 SPACE    &shortlt 2 ENTER  &sk RIGHT_SHIFT   &kp BACKSPACE
             >;
         };
 
@@ -205,10 +198,10 @@
 
         num_layer {
             bindings = <
-       &none           &none      &none         &kp F11       &kp F12    &kp SLASH     &kp N7         &kp N8        &kp N9        &kp MINUS
-       &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &none      &kp COLON     &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp PLUS
-&none  &none           &none      &none         &none         &none      &kp ASTERISK  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &none
-                                  &none         &none         &none      &kp N0        &kp BACKSPACE  &none
+        &none           &none      &none         &kp F11       &kp F12    &kp SLASH     &kp N7         &kp N8        &kp N9        &kp MINUS
+        &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &none      &kp COLON     &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp PLUS
+&trans  &none           &none      &none         &none         &none      &kp ASTERISK  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &none
+                                   &none         &none         &none      &kp N0        &kp BACKSPACE  &none
             >;
 
             label = "NUM";
