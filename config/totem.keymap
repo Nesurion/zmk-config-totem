@@ -131,21 +131,17 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         base_layer {
-
             label = "BASE";
-
             bindings = <
             &kp Q                  &kp W         &kp E            &kp R            &kp T          &kp Y             &kp U             &kp I            &kp O                &kp P
             &shortmt LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G          &kp H             &hmr RIGHT_GUI J  &hmr RALT K      &hmr LEFT_CONTROL L  &shortmt RIGHT_SHIFT SEMICOLON
 &caps_word  &kp Z                  &kp X         &kp C            &kp V            &kp B          &kp N             &kp M             &kp COMMA        &kp DOT              &kp FSLH                        &none
-                                                 &sk LEFT_SHIFT   &shortlt 1 TAB   &lt 3 SPACE    &shortlt 2 ENTER  &kp BACKSPACE     &sk RIGHT_SHIFT
+                                                 &tog 4           &shortlt 1 TAB   &lt 3 SPACE    &shortlt 2 ENTER  &kp BACKSPACE     &sk RIGHT_SHIFT
             >;
         };
 
         nav_layer {
-
             label = "NAV";
-
             bindings = <
         &kp LG(GRAVE)   &trans     &trans        &trans    &trans       &trans              &kp RC(D)       &kp RC(U)     &trans               &kp RG(PLUS)
         &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &trans       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp SINGLE_QUOTE
@@ -155,9 +151,7 @@
         };
 
         sym_layer {
-
             label = "SYM";
-
             bindings = <
         &kp EXCL   &kp AT          &kp LEFT_BRACE        &kp HASH       &kp CARET    &kp DOLLAR    &kp PERCENT       &kp RIGHT_BRACE        &kp AMPERSAND      &kp C_VOLUME_UP
         &kp TILDE  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp MINUS    &kp EQUAL     &kp RGUI          &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SQT
@@ -187,12 +181,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        mouse {
-            if-layers = <1 2>;
-            then-layer = <4>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
