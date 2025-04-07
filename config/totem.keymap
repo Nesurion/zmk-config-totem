@@ -55,12 +55,6 @@
             key-positions = <32 33 34>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <7 6>;
-            timeout-ms = <50>;
-        };
-
         resetl {
             bindings = <&sys_reset>;
             key-positions = <20 32 33 34>;
