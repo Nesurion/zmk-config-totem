@@ -193,10 +193,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT          &kp LEFT_BRACE        &kp HASH       &kp CARET    &kp DOLLAR    &kp PERCENT       &kp RIGHT_BRACE        &kp AMPERSAND      &kp C_VOLUME_UP
-        &kp TILDE  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp MINUS    &kp EQUAL     &kp RGUI          &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SQT
-&trans  &kp GRAVE  &kp PIPE        &kp LEFT_BRACKET      &kp SLASH      &kp PLUS     &kp ASTERISK  &kp C_PLAY_PAUSE  &kp RIGHT_BRACKET      &kp C_NEXT         &kp C_VOL_DN     &trans
-                                   &trans                &kp TAB        &kp SPACE    &none         &kp BACKSPACE     &trans
+        &kp EXCL   &kp AT    &kp LEFT_BRACE        &kp HASH       &kp CARET         &kp DOLLAR    &kp PERCENT    &kp RIGHT_BRACE        &kp AMPERSAND      &none
+        &kp TILDE  &kp PLUS  &kp LEFT_PARENTHESIS  &kp SLASH      &kp MINUS         &kp EQUAL     &kp RGUI       &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SQT
+&trans  &kp GRAVE  &kp PIPE  &kp LEFT_BRACKET      &kp BACKSLASH  &kp UNDERSCORE    &kp ASTERISK  &none          &kp RIGHT_BRACKET      &kp SINGLE_QUOTE   &none    &trans
+                             &trans                &kp TAB        &kp SPACE         &none         &kp BACKSPACE  &trans
             >;
         };
 
